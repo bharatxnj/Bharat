@@ -2,7 +2,10 @@ INSTANT GRATIFICATION!
 Production Deployment in minutes
 This guide will walk you through deploying a simple FastAPI application to Vercel in under 10 minutes.
 
-Step 1: Sign Up for Vercel
+Step 1:
+
+Sign Up for Vercel
+
 Open your web browser and navigate to https://vercel.com
 Click the Sign Up button in the top right corner
 Select Hobby (for personal projects)
@@ -13,7 +16,11 @@ GitLab - Click "Continue with GitLab" and authorize Vercel
 Bitbucket - Click "Continue with Bitbucket" and authorize Vercel
 Email - Enter your email address and follow the verification steps
 Complete the onboarding (you can skip team creation)
-Step 2: Install Cursor IDE
+
+Step 2: 
+
+Install Cursor IDE
+
 Note: You can use a different IDE if you prefer (VS Code, PyCharm, etc.), but these instructions assume you're using Cursor.
 
 Windows:
@@ -23,6 +30,7 @@ Click "Download for Windows"
 Run the downloaded .exe installer
 Follow the installation wizard
 Launch Cursor from your Start Menu or Desktop
+
 Mac:
 
 Visit https://cursor.com
@@ -30,6 +38,7 @@ Click "Download for Mac"
 Open the downloaded .dmg file
 Drag Cursor to your Applications folder
 Launch Cursor from Applications or Spotlight (Cmd+Space, type "Cursor")
+
 Linux:
 
 Visit https://cursor.com
@@ -40,31 +49,38 @@ Move to /opt and create a symlink:
 sudo mv cursor /opt/
 sudo ln -s /opt/cursor/cursor /usr/local/bin/cursor
 Launch by typing cursor in terminal
+
 Create Your Project Folder
 Open Cursor
 Windows/Linux: Click File → Open Folder → Create a new folder called "instant"
+
 Mac: Click File → Open → Create a new folder called "instant"
+
 Select and open the "instant" folder
-Step 3: Create Your FastAPI Application
+
+Step 3: 
+
+Create Your FastAPI Application
 In Cursor, create a new file called instant.py with the following content:
 
 from fastapi import FastAPI
-
 app = FastAPI()
-
 @app.get("/")
 def instant():
     return "Live from production!"
 Save the file (Ctrl+S on Windows/Linux, Cmd+S on Mac).
 
-Step 4: Create Requirements File
-Create a new file called requirements.txt with the following content:
+Step 4: 
 
+Create Requirements File
+Create a new file called requirements.txt with the following content:
 fastapi
 uvicorn
 Save the file.
 
-Step 5: Create Vercel Configuration
+Step 5:
+
+Create Vercel Configuration
 Create a new file called vercel.json with the following content:
 
 {
@@ -83,7 +99,9 @@ Create a new file called vercel.json with the following content:
 }
 Save the file.
 
-Step 6: Install Node.js
+Step 6: 
+
+Install Node.js
 Node.js is required for the Vercel CLI.
 
 Visit the official Node.js download page: https://nodejs.org/en/download
@@ -101,7 +119,9 @@ node --version
 npm --version
 Both commands should return version numbers if installed correctly.
 
-Step 7: Deploy to Vercel
+Step 7:
+
+Deploy to Vercel
 Open Terminal in Cursor
 Click Terminal → New Terminal (or press Ctrl+` on Windows/Linux, Cmd+` on Mac)
 Make sure you're in your "instant" project folder - you should see your three files (instant.py, requirements.txt, vercel.json) when you list files.
@@ -158,4 +178,4 @@ Make sure you're in the correct directory when running vercel
 Ensure your vercel.json has the exact JSON structure shown above
 Need Help?
 Check Vercel's documentation: https://vercel.com/docs
-Ask in class or post in the course forum
+
