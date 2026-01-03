@@ -1,0 +1,154 @@
+1. Next.js (App Router) — INSTALL
+
+Status: 🟢 Mandatory
+
+Why it stays
+
+Server Components = less JS, better perf
+
+Native routing, layouts, streaming
+
+Industry standard for modern SaaS
+
+Rules
+
+Server by default
+
+Client only for interaction
+
+No “use client everywhere” laziness
+
+If you can’t explain server/client boundaries, you don’t deserve this tool yet.
+
+2. TypeScript — INSTALL
+
+Status: 🟢 Non-negotiable
+
+Why
+
+Prevents silent runtime bugs
+
+Forces explicit contracts
+
+Scales with team size
+
+Hard rule
+If you’re using any, you’re lying to yourself.
+
+3. ESLint — INSTALL
+
+Status: 🟢 Mandatory guardrail
+
+Why
+
+Catches bugs before runtime
+
+Enforces React + Next best practices
+
+Stops “works on my machine” nonsense
+
+Rule
+Fix warnings early. Don’t suppress them.
+
+4. Tailwind CSS — INSTALL
+
+Status: 🟢 Correct choice for SaaS
+
+Why
+
+Zero CSS sprawl
+
+Faster iteration
+
+Easy design systems
+
+Rules
+
+No massive class soup
+
+Extract reusable UI components
+
+No inline styling chaos
+
+Tailwind is powerful — abuse it and your code becomes unreadable.
+
+5. src/ Directory — INSTALL
+
+Status: 🟢 Always yes
+
+Why
+
+Clean separation of concerns
+
+Scales cleanly
+
+Industry-standard layout
+
+Anyone arguing against this is optimizing for tutorials.
+
+6. App Router — INSTALL
+
+Status: 🟢 Future-proof
+
+Why
+
+Server Components
+
+Streaming
+
+Better data fetching
+
+First-class layouts
+
+Rule
+Learn it properly or suffer later.
+
+7. Import Alias (@/*) — INSTALL
+
+Status: 🟢 Small but critical
+
+Why
+
+Clean imports
+
+Easier refactors
+
+Less path hell
+
+Stick with @/. Don’t invent cute aliases.
+
+8. React Compiler — DO NOT INSTALL
+
+Status: 🔴 Reject (for now)
+
+Why
+
+Experimental
+
+Hides React fundamentals
+
+Solves problems you don’t have yet
+
+Install only when:
+
+You have real performance metrics
+
+You understand manual optimization
+
+Until then, it’s a liability.
+
+9. npm (default) — ACCEPTABLE
+
+Status: 🟡 Fine for now
+
+Why
+
+Works everywhere
+
+No learning overhead
+
+Upgrade later
+
+pnpm when monorepo or speed matters
+
+Don’t over-optimize tooling on day one.
