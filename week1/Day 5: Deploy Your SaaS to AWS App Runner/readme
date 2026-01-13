@@ -1,3 +1,16 @@
+saas/
+├── pages/                  # Next.js Pages Router
+├── styles/                 # CSS styles
+├── api/                    # FastAPI backend
+├── public/                 # Static assets
+├── node_modules/          
+├── .env.local             # Your secrets (never commit!)
+├── .gitignore
+├── package.json
+├── requirements.txt
+├── next.config.ts
+└── tsconfig.json
+
 Day 5: Deploy Your SaaS to AWS App Runner
 From Vercel to AWS: Professional Cloud Deployment
 Today, you'll take your Healthcare Consultation Assistant from Vercel and deploy it to AWS using Docker containers and App Runner. This is how professional teams deploy production applications at scale.
